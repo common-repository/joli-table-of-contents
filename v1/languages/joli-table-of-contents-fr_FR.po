@@ -1,0 +1,922 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Joli Table Of Contents\n"
+"POT-Creation-Date: 2019-09-24 17:22+0700\n"
+"PO-Revision-Date: 2019-09-24 17:23+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+
+#: config/defaults.php:4
+msgid "Do not add \"px\"."
+msgstr ""
+
+#: config/defaults.php:5
+msgid "Do not add \"em\"."
+msgstr ""
+
+#: config/defaults.php:11 config/defaults.php:16 config/defaults.php:576
+#: config/defaults.php:582 core/Controllers/MenuController.php:141
+msgid "General"
+msgstr ""
+
+#: config/defaults.php:21
+msgid "TOC title"
+msgstr ""
+
+#: config/defaults.php:24
+msgid "Shows a title on top of the Table of contents. Will not show if empty"
+msgstr ""
+
+#: config/defaults.php:25 config/defaults.php:27 config/defaults.php:271
+msgid "Table of contents"
+msgstr ""
+
+#: config/defaults.php:31 config/defaults.php:587
+msgid "Title depth"
+msgstr ""
+
+#: config/defaults.php:35 config/defaults.php:591
+msgid "Maximum depth of title tags to be displayed."
+msgstr ""
+
+#: config/defaults.php:46
+msgid "Minimum headings count"
+msgstr ""
+
+#: config/defaults.php:49
+msgid ""
+"Table of contents will not be displayed if the number of headings of the "
+"current post is below this number"
+msgstr ""
+
+#: config/defaults.php:57
+msgid "Hierarchy offset (in pixels per level)"
+msgstr ""
+
+#: config/defaults.php:61
+msgid ""
+"Empty space per level of title depth. Set to \"0\" to have all the titles "
+"vertically inline. Value is in pixels."
+msgstr ""
+
+#: config/defaults.php:69 config/defaults.php:425 config/defaults.php:604
+msgid "Prefix"
+msgstr ""
+
+#: config/defaults.php:73 config/defaults.php:608
+msgid "Prefix type that should be displayed before a title."
+msgstr ""
+
+#: config/defaults.php:75 config/defaults.php:610
+msgid "None"
+msgstr ""
+
+#: config/defaults.php:76 config/defaults.php:611
+msgid "Numbers (1,2,3...)"
+msgstr ""
+
+#: config/defaults.php:77 config/defaults.php:612
+msgid "Roman numbers (I,V,X...)"
+msgstr ""
+
+#: config/defaults.php:86
+msgid "Support us"
+msgstr ""
+
+#: config/defaults.php:90
+msgid "Show WPJoli credits"
+msgstr ""
+
+#: config/defaults.php:93
+msgid ""
+"This option will show your gratitude for our plugin by displaying a discreet "
+"\"Powered by wpjoli\" at the end of the Table of contents"
+msgstr ""
+
+#: config/defaults.php:105 views/admin/user-guide/quick-start.php:3
+msgid "Auto-insert"
+msgstr ""
+
+#: config/defaults.php:109
+msgid "Auto-insert table of contents"
+msgstr ""
+
+#: config/defaults.php:114
+msgid "TOC Position"
+msgstr ""
+
+#: config/defaults.php:117
+msgid "Where in the content the TOC should be automatically display"
+msgstr ""
+
+#: config/defaults.php:119
+msgid "Before the content"
+msgstr ""
+
+#: config/defaults.php:120
+msgid "After the content"
+msgstr ""
+
+#: config/defaults.php:121
+msgid "Before H1"
+msgstr ""
+
+#: config/defaults.php:122
+msgid "After H1"
+msgstr ""
+
+#: config/defaults.php:123
+msgid "Before first H2 tag"
+msgstr ""
+
+#: config/defaults.php:124
+msgid "After first paragraph"
+msgstr ""
+
+#: config/defaults.php:131
+msgid "Post type"
+msgstr ""
+
+#: config/defaults.php:134
+msgid "Auto insert TOC on specific post types"
+msgstr ""
+
+#: config/defaults.php:144 config/defaults.php:148 config/defaults.php:645
+#: config/defaults.php:649
+msgid "Behaviour"
+msgstr ""
+
+#: config/defaults.php:152 config/defaults.php:653
+msgid "Visibility"
+msgstr ""
+
+#: config/defaults.php:156 config/defaults.php:658
+#: views/admin/user-guide/documentation.php:15
+msgid "Unfolded, in-content"
+msgstr ""
+
+#: config/defaults.php:157 config/defaults.php:661
+#: views/admin/user-guide/documentation.php:42
+msgid "Folded, in-content"
+msgstr ""
+
+#: config/defaults.php:168
+msgid "Smooth scrolling"
+msgstr ""
+
+#: config/defaults.php:171
+msgid ""
+"Enables smooth scrolling when clicking an element of the table of contents"
+msgstr ""
+
+#: config/defaults.php:179
+msgid "Headings overflow"
+msgstr ""
+
+#: config/defaults.php:182
+msgid ""
+"How to handle headings that are longer than the table of content (especially "
+"for mobile devices)."
+msgstr ""
+
+#: config/defaults.php:184
+msgid "Wrap (overflowing content will show on a new line)"
+msgstr ""
+
+#: config/defaults.php:185
+msgid "Hidden, with ellipsis ('...')"
+msgstr ""
+
+#: config/defaults.php:187
+msgid "Hidden"
+msgstr ""
+
+#: config/defaults.php:200
+msgid "In-content behaviour"
+msgstr ""
+
+#: config/defaults.php:204
+msgid "Toggle position"
+msgstr ""
+
+#: config/defaults.php:207
+msgid ""
+"Position of the expand/collapse toggle on the folded state. This option does "
+"not apply to the \"unfolded\" visibility."
+msgstr ""
+
+#: config/defaults.php:209 config/defaults.php:365
+msgid "Left"
+msgstr ""
+
+#: config/defaults.php:210 config/defaults.php:367
+msgid "Right"
+msgstr ""
+
+#: config/defaults.php:245 config/defaults.php:767
+#: core/Controllers/MenuController.php:142
+msgid "Appearance"
+msgstr ""
+
+#: config/defaults.php:250 config/defaults.php:772 views/admin/go-pro.php:40
+msgid "Themes"
+msgstr ""
+
+#: config/defaults.php:254 config/defaults.php:776
+msgid "Theme"
+msgstr ""
+
+#: config/defaults.php:257 config/defaults.php:779
+msgid ""
+"Any changes in any styling below (title, headings, colors etc) will override "
+"theme defaults"
+msgstr ""
+
+#: config/defaults.php:259 config/defaults.php:781
+msgid "[Default]"
+msgstr ""
+
+#: config/defaults.php:261 config/defaults.php:783
+msgid "Classic"
+msgstr ""
+
+#: config/defaults.php:263 config/defaults.php:785
+msgid "Wikipedia"
+msgstr ""
+
+#: config/defaults.php:275
+msgid "Table of contents background color"
+msgstr ""
+
+#: config/defaults.php:287
+msgid "Table of contents padding"
+msgstr ""
+
+#: config/defaults.php:290 config/defaults.php:301 config/defaults.php:311
+msgid "Value in pixels."
+msgstr ""
+
+#: config/defaults.php:298
+msgid "Minimum width"
+msgstr ""
+
+#: config/defaults.php:308
+msgid "Maximum width"
+msgstr ""
+
+#: config/defaults.php:318
+msgid "Width (in-content)"
+msgstr ""
+
+#: config/defaults.php:321
+msgid "Make sure Maximum width is not set when using \"100%\" value"
+msgstr ""
+
+#: config/defaults.php:323
+msgid "Auto"
+msgstr ""
+
+#: config/defaults.php:331
+msgid "Shadow"
+msgstr ""
+
+#: config/defaults.php:334
+msgid "Displays a shadow around the Table of contents"
+msgstr ""
+
+#: config/defaults.php:342
+msgid "Custom shadow color"
+msgstr ""
+
+#: config/defaults.php:355
+msgid "Title"
+msgstr ""
+
+#: config/defaults.php:360
+msgid "Title alignement"
+msgstr ""
+
+#: config/defaults.php:363
+msgid "Alignement of the \"Table of contents\" title."
+msgstr ""
+
+#: config/defaults.php:366
+msgid "Center"
+msgstr ""
+
+#: config/defaults.php:375
+msgid "Title color"
+msgstr ""
+
+#: config/defaults.php:378
+msgid "Color of the \"Table of contents\" title."
+msgstr ""
+
+#: config/defaults.php:387
+msgid "Title font size (in em)"
+msgstr ""
+
+#: config/defaults.php:390
+msgid "Font size of the \"Table of contents\" title."
+msgstr ""
+
+#: config/defaults.php:398
+msgid "Title font weight"
+msgstr ""
+
+#: config/defaults.php:403
+msgid "[Inherit from theme]"
+msgstr ""
+
+#: config/defaults.php:404
+msgid "Lighter"
+msgstr ""
+
+#: config/defaults.php:405
+msgid "Normal"
+msgstr ""
+
+#: config/defaults.php:406
+msgid "Bold"
+msgstr ""
+
+#: config/defaults.php:407
+msgid "Bolder"
+msgstr ""
+
+#: config/defaults.php:430
+msgid "Prefix color"
+msgstr ""
+
+#: config/defaults.php:441
+msgid "Prefix color (hover)"
+msgstr ""
+
+#: config/defaults.php:452
+msgid "Prefix color (active)"
+msgstr ""
+
+#: config/defaults.php:465
+msgid "Headings"
+msgstr ""
+
+#: config/defaults.php:470
+msgid "Headings font size (in em)"
+msgstr ""
+
+#: config/defaults.php:473
+#, php-format
+msgid ""
+"Font size of each individual heading. \"1\" is the default size from your "
+"theme. \"0.5\" for 50% of the default size; \"1.2\" for 120% of the default "
+"size."
+msgstr ""
+
+#: config/defaults.php:481
+msgid "Headings height"
+msgstr ""
+
+#: config/defaults.php:484
+msgid "Determines the height of each individual heading"
+msgstr ""
+
+#: config/defaults.php:484
+msgid "Leave blank to automatically adjust to the font."
+msgstr ""
+
+#: config/defaults.php:492
+msgid "Headings color"
+msgstr ""
+
+#: config/defaults.php:503
+msgid "Headings color (hover)"
+msgstr ""
+
+#: config/defaults.php:514
+msgid "Headings color (active)"
+msgstr ""
+
+#: config/defaults.php:525
+msgid "Headings background color (hover)"
+msgstr ""
+
+#: config/defaults.php:537
+msgid "Headings background color (active)"
+msgstr ""
+
+#: config/defaults.php:550 views/admin/go-pro.php:60
+msgid "Custom CSS"
+msgstr ""
+
+#: config/defaults.php:554
+msgid "CSS code"
+msgstr ""
+
+#: config/defaults.php:558
+msgid "Write your own CSS to override settings or customize to your liking."
+msgstr ""
+
+#: config/defaults.php:560
+msgid "What can I customize ?"
+msgstr ""
+
+#: config/defaults.php:619
+msgid "Prefix numbers separator"
+msgstr ""
+
+#: config/defaults.php:622
+msgid ""
+"Character that will separate numbers. Ex: \".\" => \"1.1.2\"; \"-\" => "
+"\"1-1-2\""
+msgstr ""
+
+#: config/defaults.php:630
+msgid "Prefix numbers suffix"
+msgstr ""
+
+#: config/defaults.php:633
+msgid ""
+"Character that will be shown after the numbers. Ex: \")\" => \"1.1.2)\"; \"/"
+"\" => \"1.1.2/\""
+msgstr ""
+
+#: config/defaults.php:657 views/admin/user-guide/documentation.php:6
+msgid "Invisible, floating on scroll"
+msgstr ""
+
+#: config/defaults.php:659 views/admin/user-guide/documentation.php:24
+msgid "Unfolded, folded & floating on scroll"
+msgstr ""
+
+#: config/defaults.php:662 views/admin/user-guide/documentation.php:51
+msgid "Folded, folded & floating on scroll"
+msgstr ""
+
+#: config/defaults.php:679
+msgid "Floating behaviour"
+msgstr ""
+
+#: config/defaults.php:683
+msgid "Floating position"
+msgstr ""
+
+#: config/defaults.php:686
+msgid ""
+"Position of the fixed floating menu relative to the screen. This option does "
+"not apply to the \"in-content\" visibility."
+msgstr ""
+
+#: config/defaults.php:688
+msgid "Top"
+msgstr ""
+
+#: config/defaults.php:689
+msgid "Bottom"
+msgstr ""
+
+#: config/defaults.php:696
+msgid "Floating vertical offset (in pixels)"
+msgstr ""
+
+#: config/defaults.php:699
+msgid ""
+"Offset on the Y axis from the edge of the viewport (from top or bottom "
+"depending on the Floating position)."
+msgstr ""
+
+#: config/defaults.php:706
+msgid "Floating vertical offset for mobile (in pixels)"
+msgstr ""
+
+#: config/defaults.php:709
+msgid "If not set, the value will be the same as for Desktop"
+msgstr ""
+
+#: config/defaults.php:716
+msgid "Floating horizontal offset (in pixels)"
+msgstr ""
+
+#: config/defaults.php:719
+msgid "Offset on the X axis from the edge of the container."
+msgstr ""
+
+#: config/defaults.php:726
+msgid "Expands on (when folded)"
+msgstr ""
+
+#: config/defaults.php:729 config/defaults.php:742
+msgid ""
+"Event that will unfold the Table of content. (hover event does not apply to "
+"mobile)"
+msgstr ""
+
+#: config/defaults.php:731
+msgid "Hover (only for desktop)"
+msgstr ""
+
+#: config/defaults.php:732
+msgid "Click"
+msgstr ""
+
+#: config/defaults.php:739
+msgid "Collapses on (when unfolded)"
+msgstr ""
+
+#: config/defaults.php:744
+msgid "Leave hover (only for desktop)"
+msgstr ""
+
+#: config/defaults.php:745
+msgid "Click away"
+msgstr ""
+
+#: config/defaults.php:752
+msgid "Enable expanding animation"
+msgstr ""
+
+#: config/defaults.php:755
+msgid ""
+"Enables a small transition animation when going from collapsed to expanded"
+msgstr ""
+
+#: config/defaults.php:782
+msgid "Dark"
+msgstr ""
+
+#: config/defaults.php:784
+msgid "Classic dark"
+msgstr ""
+
+#: core/Controllers/AdminController.php:34
+msgid "Joli Table of Contents"
+msgstr ""
+
+#: core/Controllers/MenuController.php:123
+msgid "Quick start"
+msgstr ""
+
+#: core/Controllers/MenuController.php:124
+msgid "Shortcode"
+msgstr ""
+
+#: core/Controllers/MenuController.php:125
+msgid "Documentation"
+msgstr ""
+
+#: core/Controllers/MenuController.php:126
+msgid "Hooks (for developers)"
+msgstr ""
+
+#: core/Controllers/MenuController.php:143
+msgid "Dimensions"
+msgstr ""
+
+#: fs-helpers.php:12
+#, php-format
+msgid "Hey %1$s"
+msgstr ""
+
+#: fs-helpers.php:13
+#, php-format
+msgid ""
+"Please help us improve %2$s! If you opt-in, some data about your usage of "
+"%2$s will be sent to %5$s. If you skip this, that's okay! %2$s will still "
+"work just fine."
+msgstr ""
+
+#: helpers.php:47
+msgid " (Pro only)"
+msgstr ""
+
+#: views/admin/go-pro.php:30
+msgid "Maximum level of titles"
+msgstr ""
+
+#: views/admin/go-pro.php:35
+msgid "Prefixing with numbers"
+msgstr ""
+
+#: views/admin/go-pro.php:45
+msgid "Enable/disable per post"
+msgstr ""
+
+#: views/admin/go-pro.php:50
+msgid "Floating widget showing current section"
+msgstr ""
+
+#: views/admin/go-pro.php:55
+msgid "Custom Post Type Support"
+msgstr ""
+
+#: views/admin/go-pro.php:65
+msgid "TOC Title customization"
+msgstr ""
+
+#: views/admin/go-pro.php:70
+msgid "Removable WPJoli Watermark"
+msgstr ""
+
+#: views/admin/go-pro.php:77
+msgid "GET IT NOW"
+msgstr ""
+
+#: views/admin/post_settings.php:24
+msgid "Disable Auto-insert Table of contents"
+msgstr ""
+
+#: views/admin/post_settings.php:27
+msgid ""
+"This will deactivate the table of contents auto-insert on this post. "
+"Shortcode will still work if in the content."
+msgstr ""
+
+#: views/admin/post_settings.php:35
+msgid "Enable Auto-insert Table of contents"
+msgstr ""
+
+#: views/admin/post_settings.php:38
+msgid "This will force the table of contents auto-insert on this post."
+msgstr ""
+
+#: views/admin/settings.php:31
+msgid "Want more cool features such as the"
+msgstr ""
+
+#: views/admin/settings.php:31 views/notices/go-pro.php:3
+msgid "Floating Table Of Contents Widget"
+msgstr ""
+
+#: views/admin/settings.php:32
+msgid "Go Pro now"
+msgstr ""
+
+#: views/admin/settings.php:45
+msgid "Changes unsaved"
+msgstr ""
+
+#: views/admin/settings.php:46
+msgid "Save settings"
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:1
+msgid "Understanding the Behaviour > Visibility option"
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:2
+msgid ""
+"Joli Table Of Contents can be displayed in various manners from a simple, to "
+"a modern floating element."
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:3
+msgid ""
+"It has a unique feature the allows it to show the current heading section "
+"while scrolling"
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:4
+msgid "Here is a description of each behaviour:"
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:7
+msgid ""
+"Table Of Contents is invisible after page is loaded. It only shows on scroll "
+"through a floating widget"
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:16
+msgid ""
+"Table Of Contents is unfolded after page is loaded. It remains in its "
+"position and no widget shows on scroll."
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:25
+msgid ""
+"Table Of Contents is unfolded after page is loaded. It also shows on scroll "
+"through a floating widget."
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:33
+msgid "Unfolded, unfolded & floating on scroll"
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:34
+msgid ""
+"Table Of Contents is unfolded after page is loaded. It remains unfolded and "
+"floating on scroll."
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:43
+msgid ""
+"Table Of Contents is folded after page is loaded. It can be unfolded at "
+"will. It remains in its position and no widget shows on scroll."
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:52
+msgid ""
+"Table Of Contents is folded after page is loaded. It can be unfolded at "
+"will. It also shows on scroll through a floating widget."
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:60
+msgid "Globally disabling the Table of Contents"
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:61
+msgid ""
+"For some reason, you may need to deactivate the table of contents without "
+"touching your content. To do so:"
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:62
+#: views/admin/user-guide/hooks.php:26 views/admin/user-guide/hooks.php:42
+#: views/admin/user-guide/hooks.php:48 views/admin/user-guide/shortcode.php:7
+msgid "Copy & paste the following code into your theme's function.php file:"
+msgstr ""
+
+#: views/admin/user-guide/documentation.php:64
+msgid "This will disable both shortcodes and auto-insert from running."
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:1
+msgid "Safely adding content to the table of contents using the hooks"
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:2
+msgid ""
+"Because of the way Joli Table Of Contents has been designed, you must use "
+"the \"joli-div\" class to any of the content you may want to add or it will "
+"break the normal behaviour of the plugin."
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:10
+msgid "Hooks"
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:11
+msgid ""
+"Joli Table Of Contents is developer friendly and allows you to hook onto it."
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:12
+msgid "You can use the following hooks:"
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:14
+msgid "Actions:"
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:25
+msgid "Example: adding a horizontal bar after the title"
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:38
+msgid "Filters:"
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:39
+msgid ""
+"Use the following filters to customize the Table of contents toggle button"
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:41
+msgid "Customize the \"expand\" button toggle"
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:44 views/admin/user-guide/hooks.php:50
+msgid "If you are use Font awesome, you can use the icons like so:"
+msgstr ""
+
+#: views/admin/user-guide/hooks.php:47
+msgid "Customize the \"collapse\" button toggle"
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:1
+msgid "How to dislay the Joli Table Of Contents ?"
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:2
+msgid ""
+"There are several ways to have the table of contents display on your website."
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:4
+msgid ""
+"Upon activating the plugin the first time, auto-insert is not activated."
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:5
+msgid "If you wish to activate it, do as follow:"
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:6
+msgid ""
+"In the Settings page, under the \"Auto-Insert\" tab, \"Post type\" option, "
+"tick which post type you wish to have the table of contents to automatically "
+"display"
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:7
+msgid "Using the shortcode"
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:8
+#: views/admin/user-guide/shortcode.php:2
+msgid ""
+"Use the following shortcode within your content to have the table of "
+"contents display where you wish to:"
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:10
+msgid "Using the individual post settings"
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:11
+msgid ""
+"While editing a post, scroll down below your content until you reach the "
+"\"Joli Table Of Contents\" meta box."
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:12
+msgid ""
+"From here on, you can either Enable or Disable the Table of Contents. This "
+"will override the global settings."
+msgstr ""
+
+#: views/admin/user-guide/quick-start.php:13
+msgid ""
+"Do not tick Enable and Disable at the same time or the Table of Contents "
+"will remain disabled."
+msgstr ""
+
+#: views/admin/user-guide/shortcode.php:1
+msgid "How to use the shortcode ?"
+msgstr ""
+
+#: views/admin/user-guide/shortcode.php:4
+msgid "How to modify the shortcode tag ?"
+msgstr ""
+
+#: views/admin/user-guide/shortcode.php:5
+msgid ""
+"If you were using another table of contents plugin and were using the "
+"associated shortcode, good news, you don't have to change all of the "
+"shortcodes!"
+msgstr ""
+
+#: views/admin/user-guide/shortcode.php:6
+msgid "Just change the shortcode tag to match the one you have used until now."
+msgstr ""
+
+#: views/admin/user-guide/shortcode.php:9
+msgid "Can I use the shortcode in a widget?"
+msgstr ""
+
+#: views/admin/user-guide/shortcode.php:10
+msgid "Yes, you can."
+msgstr ""
+
+#: views/admin/user-guide/shortcode.php:11
+msgid ""
+"However, if you are using the floating display on scroll, this may result in "
+"unexpected behaviour on some websites."
+msgstr ""
+
+#: views/notices/go-pro.php:3
+msgid ""
+"Hi! Did you know that the Pro version of <b>Joli Table Of Contents</b> has "
+"more cool features such as the"
+msgstr ""
+
+#: views/notices/go-pro.php:6
+msgid "View Pro features"
+msgstr ""
+
+#: views/notices/go-pro.php:7
+msgid "I don't want more features"
+msgstr ""
+
+#: views/notices/rating.php:4
+#, php-format
+msgid "Hi! Thank you for using %s !"
+msgstr ""
+
+#: views/notices/rating.php:8
+msgid ""
+"If you enjoy it, we would be very grateful that you leave a review. It may "
+"not seem like much but it actually helps a lot!"
+msgstr ""
+
+#: views/notices/rating.php:15
+msgid "Thank you for your support!"
+msgstr ""

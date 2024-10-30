@@ -1,0 +1,699 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wpjoli/joli-table-of-contents",
+  "version": "0.1.0",
+  "title": "Joli Table of contents",
+  "category": "widgets",
+  "icon": "list-view",
+  "description": "Table of contents",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "joli-table-of-contents",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "hidden_headings": {
+      "type": "array",
+      "default": []
+    },
+    "edited_headings": {
+      "type": "object",
+      "default": {}
+    },
+    "toc_width_incontent": {
+      "type": "string",
+      "enum": [
+        "width-auto",
+        "width-100"
+      ]
+    },
+    "toc_min_width": {
+      "type": "string"
+    },
+    "toc_max_width": {
+      "type": "string"
+    },
+    "hierarchy_offset": {
+      "type": "string"
+    },
+    "min_headings": {
+      "type": "integer"
+    },
+    "max_headings": {
+      "type": "integer"
+    },
+    "toc_is_sticky": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "animate_on_fold": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "smooth_scroll": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "headings_full_row_clickable": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "headings_overflow": {
+      "type": "string",
+      "enum": [
+        "wrap",
+        "hidden-ellipsis",
+        "hidden"
+      ]
+    },
+    "jump_to_offset": {
+      "type": "string"
+    },
+    "jump_to_offset_mobile": {
+      "type": "string"
+    },
+    "fold_on_load": {
+      "type": "string",
+      "enum": [
+        "no",
+        "yes",
+        "responsive"
+      ]
+    },
+    "fold_if_headings_count": {
+      "type": "integer"
+    },
+    "hide_main_toc": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "show_header": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "toc_title": {
+      "type": "string"
+    },
+    "toc_title_alignment": {
+      "type": "string",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "header_as_toggle": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "show_toggle": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "toggle_position": {
+      "type": "string",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "toggle_type": {
+      "type": "string",
+      "enum": [
+        "icon",
+        "icon-std",
+        "text"
+      ]
+    },
+    "toggle_button_icon": {
+      "type": "string",
+      "enum": [
+        "toggle-1",
+        "toggle-2"
+      ]
+    },
+    "toggle_button_text_closed": {
+      "type": "string"
+    },
+    "toggle_button_text_opened": {
+      "type": "string"
+    },
+    "toggle_button_icon_closed": {
+      "type": "string",
+      "enum": [
+        "gg-math-plus",
+        "gg-math-minus",
+        "gg-chevron-down",
+        "gg-chevron-up",
+        "gg-menu",
+        "gg-menu-left-alt",
+        "gg-edit-highlight",
+        "gg-layout-grid-small",
+        "gg-layout-list",
+        "gg-pentagon-down",
+        "gg-pentagon-up",
+        "gg-add-r",
+        "gg-remove-r",
+        "gg-add",
+        "gg-remove",
+        "gg-close",
+        "gg-chevron-double-down",
+        "gg-chevron-double-up",
+        "gg-chevron-down-o",
+        "gg-chevron-up-o"
+      ]
+    },
+    "toggle_button_icon_opened": {
+      "type": "string",
+      "enum": [
+        "gg-math-plus",
+        "gg-math-minus",
+        "gg-chevron-down",
+        "gg-chevron-up",
+        "gg-menu",
+        "gg-menu-left-alt",
+        "gg-edit-highlight",
+        "gg-layout-grid-small",
+        "gg-layout-list",
+        "gg-pentagon-down",
+        "gg-pentagon-up",
+        "gg-add-r",
+        "gg-remove-r",
+        "gg-add",
+        "gg-remove",
+        "gg-close",
+        "gg-chevron-double-down",
+        "gg-chevron-double-up",
+        "gg-chevron-down-o",
+        "gg-chevron-up-o"
+      ]
+    },
+    "numeration_type": {
+      "type": "string",
+      "enum": [
+        "none",
+        "numbers",
+        "roman",
+        "hexadecimal",
+        "binary"
+      ]
+    },
+    "numeration_display": {
+      "type": "string",
+      "enum": [
+        "single",
+        "full"
+      ]
+    },
+    "numeration_separator": {
+      "type": "string"
+    },
+    "numeration_suffix": {
+      "type": "string"
+    },
+    "columns_mode": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "columns_min_headings": {
+      "type": "integer"
+    },
+    "columns_breakpoint": {
+      "type": "integer"
+    },
+    "headings_depth": {
+      "type": "string"
+    },
+    "skip_h_by_text": {
+      "type": "string"
+    },
+    "skip_h_by_class": {
+      "type": "string"
+    },
+    "skip_h_by_ascending_class": {
+      "type": "string"
+    },
+    "hash_format": {
+      "type": "string",
+      "enum": [
+        "latin",
+        "all",
+        "all-translit",
+        "counter"
+      ]
+    },
+    "hash_counter_prefix": {
+      "type": "string"
+    },
+    "activate_dynamic_unfold": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "theme": {
+      "type": "string"
+    },
+    "preserve_theme_styles": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "toc_margin": {
+      "type": "object"
+    },
+    "toc_padding": {
+      "type": "object"
+    },
+    "toc_border_radius": {
+      "type": "object"
+    },
+    "toc_border": {
+      "type": "object"
+    },
+    "toc_border_color": {
+      "type": "string"
+    },
+    "toc_background_color": {
+      "type": "string"
+    },
+    "toc_shadow": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "toc_shadow_color": {
+      "type": "string"
+    },
+    "toc_header_height": {
+      "type": "string"
+    },
+    "toc_header_margin": {
+      "type": "object"
+    },
+    "toc_header_padding": {
+      "type": "object"
+    },
+    "toc_header_background_color": {
+      "type": "string"
+    },
+    "toc_title_color": {
+      "type": "string"
+    },
+    "toc_title_font_size": {
+      "type": "string"
+    },
+    "toc_title_font_weight": {
+      "type": "string",
+      "enum": [
+        "none",
+        "100",
+        "200",
+        "300",
+        "400",
+        "500",
+        "600",
+        "700",
+        "800",
+        "900",
+        "lighter",
+        "bolder"
+      ]
+    },
+    "toc_toggle_color": {
+      "type": "string"
+    },
+    "toc_body_margin": {
+      "type": "object"
+    },
+    "toc_body_padding": {
+      "type": "object"
+    },
+    "toc_body_background_color": {
+      "type": "string"
+    },
+    "headings_margin": {
+      "type": "object"
+    },
+    "headings_padding": {
+      "type": "object"
+    },
+    "headings_border_radius": {
+      "type": "object"
+    },
+    "headings_line_height": {
+      "type": "string"
+    },
+    "headings_background_color": {
+      "type": "string"
+    },
+    "headings_background_color_hover": {
+      "type": "string"
+    },
+    "headings_background_color_active": {
+      "type": "string"
+    },
+    "headings_link_margin": {
+      "type": "object"
+    },
+    "headings_link_padding": {
+      "type": "object"
+    },
+    "headings_link_font_size": {
+      "type": "string"
+    },
+    "headings_link_font_weight": {
+      "type": "string",
+      "enum": [
+        "none",
+        "100",
+        "200",
+        "300",
+        "400",
+        "500",
+        "600",
+        "700",
+        "800",
+        "900",
+        "lighter",
+        "bolder"
+      ]
+    },
+    "headings_link_color": {
+      "type": "string"
+    },
+    "headings_link_color_hover": {
+      "type": "string"
+    },
+    "headings_link_color_active": {
+      "type": "string"
+    },
+    "headings_link_background_color": {
+      "type": "string"
+    },
+    "headings_link_background_color_hover": {
+      "type": "string"
+    },
+    "headings_link_background_color_active": {
+      "type": "string"
+    },
+    "numeration_color": {
+      "type": "string"
+    },
+    "numeration_color_hover": {
+      "type": "string"
+    },
+    "numeration_color_active": {
+      "type": "string"
+    },
+    "columns_separator_style": {
+      "type": "string",
+      "enum": [
+        "solid",
+        "dashed",
+        "dotted",
+        "double",
+        "ridge",
+        "none"
+      ]
+    },
+    "columns_separator_width": {
+      "type": "string"
+    },
+    "columns_separator_color": {
+      "type": "string"
+    },
+    "activate_floating_table_of_contents": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "floating_widget_height": {
+      "type": "string"
+    },
+    "floating_hide_numeration": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "floating_nav_buttons": {
+      "type": "string",
+      "enum": [
+        "none",
+        "next",
+        "prev_next"
+      ]
+    },
+    "floating_nav_buttons_position": {
+      "type": "string",
+      "enum": [
+        "left",
+        "right",
+        "around"
+      ]
+    },
+    "floating_nav_buttons_width": {
+      "type": "string"
+    },
+    "floating_compatibility_mode": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "floating_show_header": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "expands_on": {
+      "type": "string",
+      "enum": [
+        "hover",
+        "click"
+      ]
+    },
+    "collapses_on": {
+      "type": "string",
+      "enum": [
+        "hover-off",
+        "click-away"
+      ]
+    },
+    "floating_position": {
+      "type": "string",
+      "enum": [
+        "top",
+        "bottom"
+      ]
+    },
+    "floating_offset_y": {
+      "type": "string"
+    },
+    "floating_offset_y_mobile": {
+      "type": "string"
+    },
+    "floating_offset_x": {
+      "type": "string"
+    },
+    "floating_widget_background_color": {
+      "type": "string"
+    },
+    "floating_widget_current_heading_padding": {
+      "type": "object"
+    },
+    "floating_widget_color": {
+      "type": "string"
+    },
+    "floating_widget_font_size": {
+      "type": "string"
+    },
+    "floating_widget_font_weight": {
+      "type": "string",
+      "enum": [
+        "none",
+        "100",
+        "200",
+        "300",
+        "400",
+        "500",
+        "600",
+        "700",
+        "800",
+        "900",
+        "lighter",
+        "bolder"
+      ]
+    },
+    "floating_widget_nav_color": {
+      "type": "string"
+    },
+    "floating_toc_shadow": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "floating_toc_shadow_color": {
+      "type": "string"
+    },
+    "floating_widget_border_radius": {
+      "type": "object"
+    },
+    "activate_slide_out_table_of_contents": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "slide_out_auto_close": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "slide_out_open_on_load": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "slide_out_hide_header": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "slide_out_width": {
+      "type": "string"
+    },
+    "slide_out_mode": {
+      "type": "string",
+      "enum": [
+        "push",
+        "over"
+      ]
+    },
+    "slide_out_position": {
+      "type": "string",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "slide_out_toggle_position": {
+      "type": "string",
+      "enum": [
+        "top",
+        "center",
+        "bottom"
+      ]
+    },
+    "slide_out_toggle_width": {
+      "type": "string"
+    },
+    "slide_out_toggle_offset_y": {
+      "type": "string"
+    },
+    "slide_out_toggle_button_icon": {
+      "type": "string",
+      "enum": [
+        "gg-layout-list",
+        "gg-layout-grid-small",
+        "gg-menu",
+        "gg-menu-left-alt",
+        "gg-edit-highlight",
+        "gg-math-plus"
+      ]
+    },
+    "slide_out_padding": {
+      "type": "object"
+    },
+    "slide_out_background_color": {
+      "type": "string"
+    },
+    "slide_out_toggle_color": {
+      "type": "string"
+    },
+    "slide_out_toggle_background_color": {
+      "type": "string"
+    },
+    "activate_progress_bar": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "progress_bar_position": {
+      "type": "string",
+      "enum": [
+        "top",
+        "bottom"
+      ]
+    },
+    "progress_bar_offset_y": {
+      "type": "string"
+    },
+    "progress_bar_offset_y_mobile": {
+      "type": "string"
+    },
+    "progress_bar_thickness": {
+      "type": "string"
+    },
+    "progress_bar_color": {
+      "type": "string"
+    },
+    "progress_bar_background_color": {
+      "type": "string"
+    }
+  }
+}
